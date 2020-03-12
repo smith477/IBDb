@@ -1,0 +1,11 @@
+D:\Faks\Napredne baze\IBDb\Persistance\bin\Debug\netstandard2.0\Persistance.deps.json
+D:\Faks\Napredne baze\IBDb\Persistance\bin\Debug\netstandard2.0\Persistance.dll
+D:\Faks\Napredne baze\IBDb\Persistance\bin\Debug\netstandard2.0\Persistance.pdb
+D:\Faks\Napredne baze\IBDb\Persistance\bin\Debug\netstandard2.0\Domain.dll
+D:\Faks\Napredne baze\IBDb\Persistance\bin\Debug\netstandard2.0\Domain.pdb
+D:\Faks\Napredne baze\IBDb\Persistance\obj\Debug\netstandard2.0\Persistance.csprojAssemblyReference.cache
+D:\Faks\Napredne baze\IBDb\Persistance\obj\Debug\netstandard2.0\Persistance.AssemblyInfoInputs.cache
+D:\Faks\Napredne baze\IBDb\Persistance\obj\Debug\netstandard2.0\Persistance.AssemblyInfo.cs
+D:\Faks\Napredne baze\IBDb\Persistance\obj\Debug\netstandard2.0\Persistance.csproj.CopyComplete
+D:\Faks\Napredne baze\IBDb\Persistance\obj\Debug\netstandard2.0\Persistance.dll
+D:\Faks\Napredne baze\IBDb\Persistance\obj\Debug\netstandard2.0\Persistance.pdb
