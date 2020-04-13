@@ -8,52 +8,39 @@ using Cassandra.Mapping;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     public class ValuesController : ControllerBase
     {
+        private readonly ISession session;
+        private readonly ICluster cluster;
 
-        Cassandra.Cluster cluster = Cluster.Builder()
-                    .AddContactPoints("127.0.0.1")
-                    .Build();
+        public ValuesController()
+        {
+            cluster = Cluster.Builder()
+                     .AddContactPoints("127.0.0.1")
+                     .Build(); ;
+            session = cluster.Connect("ibdb");
+        }  
 
         [HttpGet]
-        public IEnumerable<Values> Get()
+        public IEnumerable<Test> Get()
         {
-            Cassandra.ISession session = cluster.Connect("ibdb");
+            var valuesTable = new Table<Test>(session);
 
-            var valuesTable = new Table<Values>(session);
-            MappingConfiguration.Global.Define(
-                          new Map<Values>()
-                             .TableName("ibdb.values")
-                             .PartitionKey(u => u.Id)
-                             .Column(u => u.Id, cm => cm.WithName("id"))
-                             .Column(u => u.Value_int, cm => cm.WithName("value_int"))
-                             .Column(u => u.Value_string, cm => cm.WithName("value_string"))
-                             );
-
-            IEnumerable<Values> values = (from value in valuesTable select value).Execute();
+            IEnumerable<Test> values = (from test in valuesTable select test).Execute();
             return values;
-
-
         }
-        [HttpGet("{id}")]
-        public Values GetId(Guid id)
-        {
-            Cassandra.ISession session = cluster.Connect("ibdb");
-            var valuesTable = new Table<Values>(session);
-            MappingConfiguration.Global.Define(
-                          new Map<Values>()
-                             .TableName("ibdb.values")
-                             .PartitionKey(u => u.Id)
-                             .Column(u => u.Id, cm => cm.WithName("id"))
-                             .Column(u => u.Value_int, cm => cm.WithName("value_int"))
-                             .Column(u => u.Value_string, cm => cm.WithName("value_string"))
-                             );
 
-            var values = (from value in valuesTable where value.Id == id select value)
+        [HttpGet("{id}")]
+        public Values GetValue(Guid id)
+        {
+            var valuesTable = new Table<Values>(session);
+
+            var values = valuesTable.Where(u => u.Id == id)
                 .AllowFiltering()
                 .FirstOrDefault()
                 .Execute();
@@ -61,20 +48,12 @@ namespace API.Controllers
         }
 
         [HttpPut("{id}")]
-        public void UpdateValue(Guid id)
+        public void UpdateValue(Guid id, Values val)
         {
-            Cassandra.ISession session = cluster.Connect("ibdb");
             var valuesTable = new Table<Values>(session);
-            MappingConfiguration.Global.Define(
-                          new Map<Values>()
-                             .TableName("ibdb.values")
-                             .PartitionKey(u => u.Id)
-                             .Column(u => u.Id, cm => cm.WithName("id"))
-                             .Column(u => u.Value_int, cm => cm.WithName("value_int"))
-                             .Column(u => u.Value_string, cm => cm.WithName("value_string"))
-                             );
+
             valuesTable.Where(u => u.Id == id)
-                        .Select(u => new Values { Value_int = 15, Value_string = "nesto44" })
+                        .Select(u => new Values { Value_int = val.Value_int, Value_string = val.Value_string })
                         .Update()
                         .Execute();
         }
@@ -82,14 +61,8 @@ namespace API.Controllers
         [HttpDelete("{id}")]
         public void DeleteValue(Guid id)
         {
-            Cassandra.ISession session = cluster.Connect("ibdb");
             var valuesTable = new Table<Values>(session);
-            MappingConfiguration.Global.Define(
-                          new Map<Values>()
-                             .TableName("ibdb.values")
-                             .PartitionKey(u => u.Id)
-                             .Column(u => u.Id, cm => cm.WithName("id"))
-                             );
+
             valuesTable.Where(u => u.Id == id)
                         .Delete()
                         .Execute();

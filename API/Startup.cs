@@ -1,5 +1,9 @@
 using System.Linq;
+using AspNetCore.Identity.Cassandra;
 using AspNetCore.Identity.Cassandra.Extensions;
+using Cassandra;
+using Cassandra.Mapping;
+using Domain;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -23,19 +27,8 @@ namespace API
         {
             services.AddControllers();
 
-            services.AddCassandraSession<Cassandra.ISession>(() =>
-            {
-                var cluster = Cassandra.Cluster.Builder()
-                    .AddContactPoints(Configuration.GetSection("CassandraNodes").GetChildren().Select(x => x.Value))
-                    .Build();
-                var session = cluster.Connect();
+            services.Configure<CassandraOptions>(Configuration.GetSection("Cassandra"));
 
-                return session;
-            });
-
-            // services.AddIdentity<ApplicationUser, ApplicationRole>()
-            //     .UseCassandraStores<Cassandra.ISession>()
-            //     .AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,8 +38,6 @@ namespace API
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseHttpsRedirection();
 
             app.UseRouting();
 
