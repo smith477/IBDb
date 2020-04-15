@@ -17,6 +17,7 @@ CREATE TABLE IF NOT EXISTS message
 	messageText VARCHAR,
 	dateOfMessage TIMESTAMP,
 	senderID uuid,
+	chatID uuid,
 );
 
 CREATE TABLE IF NOT EXISTS chat

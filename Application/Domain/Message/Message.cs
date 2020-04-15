@@ -8,7 +8,8 @@ namespace Application.Domain.Message
     {
         public string Id { get; set; }
         public string MessageText { get; set; }
-        public DateTime DateOfMessage { get; set; }
+        public string DateOfMessage { get; set; }
         public string SenderId { get; set; }
+        public string ChatId { get; set; }
     }
 }
