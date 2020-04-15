@@ -1,0 +1,46 @@
+CREATE TABLE IF NOT EXISTS user 
+(
+	id uuid PRIMARY KEY,
+	firstName VARCHAR,
+	lastName VARCHAR,
+	displayName VARCHAR,
+	birthDay DATE,
+	email VARCHAR,
+	password VARCHAR,
+	chats list<uuid>,
+	groupChats list<uuid>
+);
+
+CREATE TABLE IF NOT EXISTS message
+(
+	id uuid PRIMARY KEY,
+	messageText VARCHAR,
+	dateOfMessage TIMESTAMP,
+	senderID uuid,
+);
+
+CREATE TABLE IF NOT EXISTS chat
+(
+	id uuid PRIMARY KEY,
+	name VARCHAR,
+	color VARCHAR,
+	idFirstUser uuid,
+	idSecondUser uuid,
+	messageList list<uuid>
+);
+
+CREATE TABLE IF NOT EXISTS groupChat
+(
+	id uuid PRIMARY KEY,
+	name VARCHAR,
+	color VARCHAR,
+	userList list<uuid>,
+	messageList list<uuid>
+);
+
+CREATE TABLE IF NOT EXISTS chatAdmin
+(
+	id uuid PRIMARY KEY,
+	userID uuid,
+	groupChatId uuid
+);

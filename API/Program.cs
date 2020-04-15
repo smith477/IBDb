@@ -1,9 +1,5 @@
-using Cassandra;
-using Cassandra.Data.Linq;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using Domain.User;
-using System.Collections.Generic;
 
 namespace API
 {
