@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Domain.Chat
 {
-    class GroupChat
+    public class GroupChat
     {
         public GroupChat()
         {
@@ -17,5 +17,6 @@ namespace Application.Domain.Chat
         public string Color { get; set; }
         public List<string> UserList { get; set; }
         public List<string> MessageList { get; set; }
+        public string AdminId { get; set; }
     }
 }

@@ -127,4 +127,9 @@ D:\Faks\Napredne baze\IBDb\API\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis
 D:\Faks\Napredne baze\IBDb\API\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Faks\Napredne baze\IBDb\API\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Faks\Napredne baze\IBDb\API\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Faks\Napredne baze\IBDb\API\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+D:\Faks\Napredne baze\IBDb\API\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+D:\Faks\Napredne baze\IBDb\API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\Faks\Napredne baze\IBDb\API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\Faks\Napredne baze\IBDb\API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\Faks\Napredne baze\IBDb\API\obj\Debug\netcoreapp3.1\API.MvcApplicationPartsAssemblyInfo.cache

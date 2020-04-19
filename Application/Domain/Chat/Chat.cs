@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Domain.Chat
 {
-    class Chat
+    public class Chat
     {
         public Chat()
         {

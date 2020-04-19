@@ -13,12 +13,14 @@ CREATE TABLE IF NOT EXISTS user
 
 CREATE TABLE IF NOT EXISTS message
 (
-	id uuid PRIMARY KEY,
+	id uuid,
 	messageText VARCHAR,
 	dateOfMessage TIMESTAMP,
 	senderID uuid,
 	chatID uuid,
-);
+	PRIMARY KEY ((id), dateOfMessage)
+)
+WITH CLUSTERING ORDER BY (dateOfMessage DESC);
 
 CREATE TABLE IF NOT EXISTS chat
 (
@@ -27,7 +29,6 @@ CREATE TABLE IF NOT EXISTS chat
 	color VARCHAR,
 	idFirstUser uuid,
 	idSecondUser uuid,
-	messageList list<uuid>
 );
 
 CREATE TABLE IF NOT EXISTS groupChat
@@ -36,12 +37,15 @@ CREATE TABLE IF NOT EXISTS groupChat
 	name VARCHAR,
 	color VARCHAR,
 	userList list<uuid>,
-	messageList list<uuid>
+	adminID uuid
 );
 
-CREATE TABLE IF NOT EXISTS chatAdmin
-(
-	id uuid PRIMARY KEY,
-	userID uuid,
-	groupChatId uuid
-);
+
+INSERT INTO ibdb.user (id, firstname, lastname, birthday, displayname, email, password, chats, groupchats)
+	VALUES(uuid(), 'bob', 'boban', toDate(now()), 'bobAn', 'bob@test.com', 'Pa$$w0rd', [], []);
+	
+INSERT INTO ibdb.user (id, firstname, lastname, birthday, displayname, email, password, chats, groupchats)
+	VALUES(uuid(), 'jim', 'jiman', toDate(now()), 'jimAn', 'jim@test.com', 'Pa$$w0rd', [], []);
+
+INSERT INTO ibdb.user (id, firstname, lastname, birthday, displayname, email, password, chats, groupchats)
+	VALUES(uuid(), 'josh', 'joshan', toDate(now()), 'joshAn', 'josh@test.com', 'Pa$$w0rd', [], []);

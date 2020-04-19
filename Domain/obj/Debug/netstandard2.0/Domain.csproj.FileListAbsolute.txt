@@ -1,8 +1,0 @@
-D:\Faks\Napredne baze\IBDb\Domain\bin\Debug\netstandard2.0\Domain.deps.json
-D:\Faks\Napredne baze\IBDb\Domain\bin\Debug\netstandard2.0\Domain.dll
-D:\Faks\Napredne baze\IBDb\Domain\bin\Debug\netstandard2.0\Domain.pdb
-D:\Faks\Napredne baze\IBDb\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
-D:\Faks\Napredne baze\IBDb\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
-D:\Faks\Napredne baze\IBDb\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
-D:\Faks\Napredne baze\IBDb\Domain\obj\Debug\netstandard2.0\Domain.dll
-D:\Faks\Napredne baze\IBDb\Domain\obj\Debug\netstandard2.0\Domain.pdb
