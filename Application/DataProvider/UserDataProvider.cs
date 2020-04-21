@@ -87,15 +87,26 @@ namespace Application.DataProvider
             }
         }
 
-        public static void RegisterUser(User user)
+        public static User RegisterUser(User user)
         {
             ISession session = SessionManager.GetSession();
             if (session == null)
-                return;
+                return null;
 
             RowSet userDb = session.Execute("INSERT INTO ibdb.user (id, firstname, lastname, displayname, birthday, email, password) " +
                             "VALUES (uuid(),'" + user.FirstName +"','" + user.LastName + "','" + user.DisplayName + "', '" + user.Birthday + "','" + user.Email + "', '" +
                             user.Password + "');");
+
+            Row usr = session.Execute("SELECT * FROM ibdb.user WHERE email = " + user.Email + "allow filtering;").FirstOrDefault();
+
+            user.Id = usr["id"] != null ? usr["id"].ToString() : " ";
+            user.FirstName = usr["firstname"] != null ? usr["firstname"].ToString() : " ";
+            user.LastName = usr["lastname"] != null ? usr["lastname"].ToString() : " ";
+            user.DisplayName = usr["displayname"] != null ? usr["displayname"].ToString() : " ";
+            user.Birthday = usr["birthday"] != null ? usr["birthday"].ToString() : " ";
+            user.Email = usr["email"] != null ? usr["email"].ToString() : " ";
+
+            return user;
         }
 
         public static void UpdateUser(User usr)

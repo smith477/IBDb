@@ -10,17 +10,21 @@ var password = document.getElementById("Password");
 var loginButton = document.getElementById("LoginButton");
 
 $(loginButton).click(function () {
+    var payload = {
+        displayname: username.value,
+        password: password.value
+    }
     $.ajax({
-        url: "/api/user/login",
+        url: "http://localhost:5000/api/user/login",
         type: "POST",
-        data: {
-            "username": username.value,
-            "password": password.value
-        },
+        data: JSON.stringify(payload),
         contentType: "application/json",
         dataType: "json",
         success: function (response) {
-            console.log(response);
+           console.log(response);
+        },
+        error: function (error) {
+            console.log(error);
         }
     })
 })

@@ -1,0 +1,55 @@
+﻿@page
+@model ChatApp.Pages.ChatPages.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>Register</h1>
+
+<form method="post">
+
+    <div class="form-group">
+        <label asp-for="User.FirstName"></label>
+        <input asp-for="User.FirstName" class="form-control" />
+        <span class="text-danger" asp-validation-for="User.FirstName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="User.LastName"></label>
+        <input asp-for="User.LastName" class="form-control" />
+        <span class="text-danger" asp-validation-for="User.LastName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="User.DisplayName"></label>
+        <input asp-for="User.DisplayName" class="form-control" />
+        <span class="text-danger" asp-validation-for="User.DisplayName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="User.Birthday"></label>
+        <input type="text" asp-for="User.Birthday" class="form-control" id="datepicker" />
+        <span class="text-danger" asp-validation-for="User.Birthday"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="User.Email"></label>
+        <input type="email" asp-for="User.Email" class="form-control" />
+        <span class="text-danger" asp-validation-for="User.Email"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="User.Password"></label>
+        <input asp-for="User.Password" class="form-control" />
+        <span class="text-danger" asp-validation-for="User.Password"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+@section Scripts {
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({ dateFormat: 'yy-mm-dd' });
+        });
+    </script>
+    <partial name="_ValidationScriptsPartial" />
+}

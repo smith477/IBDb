@@ -109,3 +109,13 @@ D:\Master Folder\Projekti\TChat\ChatApp\bin\Debug\netcoreapp3.1\zh-Hant\Microsof
 D:\Master Folder\Projekti\TChat\ChatApp\obj\Debug\netcoreapp3.1\ChatApp.csproj.CoreCompileInputs.cache
 D:\Master Folder\Projekti\TChat\ChatApp\obj\Debug\netcoreapp3.1\ChatApp.MvcApplicationPartsAssemblyInfo.cache
 D:\Master Folder\Projekti\TChat\ChatApp\obj\Debug\netcoreapp3.1\Razor\Pages\ChatPages\Login.cshtml.g.cs
+D:\Master Folder\Projekti\TChat\ChatApp\bin\Debug\netcoreapp3.1\AspNetCore.Identity.Cassandra.dll
+D:\Master Folder\Projekti\TChat\ChatApp\bin\Debug\netcoreapp3.1\Cassandra.dll
+D:\Master Folder\Projekti\TChat\ChatApp\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+D:\Master Folder\Projekti\TChat\ChatApp\bin\Debug\netcoreapp3.1\System.Management.dll
+D:\Master Folder\Projekti\TChat\ChatApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Management.dll
+D:\Master Folder\Projekti\TChat\ChatApp\bin\Debug\netcoreapp3.1\Application.dll
+D:\Master Folder\Projekti\TChat\ChatApp\bin\Debug\netcoreapp3.1\Application.pdb
+D:\Master Folder\Projekti\TChat\ChatApp\obj\Debug\netcoreapp3.1\Razor\Pages\ChatPages\User.cshtml.g.cs
+D:\Master Folder\Projekti\TChat\ChatApp\obj\Debug\netcoreapp3.1\Razor\Pages\ChatPages\NotFound.cshtml.g.cs
+D:\Master Folder\Projekti\TChat\ChatApp\obj\Debug\netcoreapp3.1\Razor\Pages\ChatPages\Register.cshtml.g.cs

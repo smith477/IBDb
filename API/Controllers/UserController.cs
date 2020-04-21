@@ -21,7 +21,7 @@ namespace API.Controllers
         {
             return Ok(UserDataProvider.GetUser(id));
         }
-        [HttpGet("login")]
+        [HttpPost("login")]
         public IActionResult LoginUser(User user)
         {
             return Ok(UserDataProvider.LoginUser(user));
@@ -29,8 +29,7 @@ namespace API.Controllers
         [HttpPost("register")]
         public IActionResult RegisterUser(User user)
         {
-            UserDataProvider.RegisterUser(user);
-            return Ok();
+            return Ok(UserDataProvider.RegisterUser(user));
         }
         [HttpPost("update")]
         public IActionResult Update(User user)

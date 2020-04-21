@@ -1,0 +1,18 @@
+﻿@page "{userId}"
+@model ChatApp.Pages.ChatPages.UserModel
+@{
+    ViewData["Title"] = "User";
+}
+
+<h1>User</h1>
+
+<div>
+    Id: @Model.User.Id
+</div>
+<div>
+    First Name: @Model.User.FirstName
+</div>
+<div>
+    Last Name: @Model.User.LastName
+</div>
+

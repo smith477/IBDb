@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Faks\\Napredne baze\\IBDb\\API\\API.csproj": {}
+    "D:\\Master Folder\\Projekti\\TChat\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\Faks\\Napredne baze\\IBDb\\API\\API.csproj": {
+    "D:\\Master Folder\\Projekti\\TChat\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Faks\\Napredne baze\\IBDb\\API\\API.csproj",
+        "projectUniqueName": "D:\\Master Folder\\Projekti\\TChat\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Faks\\Napredne baze\\IBDb\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\Dusan\\.nuget\\packages\\",
-        "outputPath": "D:\\Faks\\Napredne baze\\IBDb\\API\\obj\\",
+        "projectPath": "D:\\Master Folder\\Projekti\\TChat\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\Master Folder\\Projekti\\TChat\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dusan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Faks\\Napredne baze\\IBDb\\Application\\Application.csproj": {
-                "projectPath": "D:\\Faks\\Napredne baze\\IBDb\\Application\\Application.csproj"
+              "D:\\Master Folder\\Projekti\\TChat\\Application\\Application.csproj": {
+                "projectPath": "D:\\Master Folder\\Projekti\\TChat\\Application\\Application.csproj"
               }
             }
           }
@@ -98,24 +98,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Faks\\Napredne baze\\IBDb\\Application\\Application.csproj": {
+    "D:\\Master Folder\\Projekti\\TChat\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Faks\\Napredne baze\\IBDb\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\Master Folder\\Projekti\\TChat\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\Faks\\Napredne baze\\IBDb\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Dusan\\.nuget\\packages\\",
-        "outputPath": "D:\\Faks\\Napredne baze\\IBDb\\Application\\obj\\",
+        "projectPath": "D:\\Master Folder\\Projekti\\TChat\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\Master Folder\\Projekti\\TChat\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dusan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -164,7 +164,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

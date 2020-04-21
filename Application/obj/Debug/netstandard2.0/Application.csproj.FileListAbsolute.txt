@@ -6,3 +6,12 @@ D:\Faks\Napredne baze\IBDb\Application\obj\Debug\netstandard2.0\Application.Asse
 D:\Faks\Napredne baze\IBDb\Application\obj\Debug\netstandard2.0\Application.AssemblyInfo.cs
 D:\Faks\Napredne baze\IBDb\Application\obj\Debug\netstandard2.0\Application.dll
 D:\Faks\Napredne baze\IBDb\Application\obj\Debug\netstandard2.0\Application.pdb
+D:\Master Folder\Projekti\TChat\Application\bin\Debug\netstandard2.0\Application.deps.json
+D:\Master Folder\Projekti\TChat\Application\bin\Debug\netstandard2.0\Application.dll
+D:\Master Folder\Projekti\TChat\Application\bin\Debug\netstandard2.0\Application.pdb
+D:\Master Folder\Projekti\TChat\Application\obj\Debug\netstandard2.0\Application.csprojAssemblyReference.cache
+D:\Master Folder\Projekti\TChat\Application\obj\Debug\netstandard2.0\Application.csproj.CoreCompileInputs.cache
+D:\Master Folder\Projekti\TChat\Application\obj\Debug\netstandard2.0\Application.AssemblyInfoInputs.cache
+D:\Master Folder\Projekti\TChat\Application\obj\Debug\netstandard2.0\Application.AssemblyInfo.cs
+D:\Master Folder\Projekti\TChat\Application\obj\Debug\netstandard2.0\Application.dll
+D:\Master Folder\Projekti\TChat\Application\obj\Debug\netstandard2.0\Application.pdb
